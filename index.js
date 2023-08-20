@@ -86,14 +86,13 @@ client.on('ready', async () => {
          .setDescription("*Chargement en cours...*")
          const msg = await channel.send({ embeds: [start] });
 
-        var online = '🟢';
-        var offline = '🔴';
+        var online = '<a:online:1140757189246599218>';
+        var offline = '<a:offline:1140757185329102910>';
 
         let previousStates = {};
         let previousConnections = {};
 
 const logChannel = client.channels.resolve(config.setalerte);
-
 
 setInterval(() => {
   const pingFields = sites.map(site => {
@@ -107,12 +106,12 @@ setInterval(() => {
                     if (available) {
                         // Site est de nouveau connecté, envoyer une alerte
                         const now = new Date().toLocaleString('fr-FR', { timeZone: "Europe/Paris" });
-                        const availableConnectAlert = `Le site: \`\`${site.addr}\`\` est __redisponible__ à: **${now}**`;
+                        const availableConnectAlert = `<a:Boteurhack:1140254487798358017> Le site: \`\`${site.addr}\`\` est __redisponible__ à: **${now}** <a:youpi1:1067166921293844491>`;
                         logChannel.send(availableConnectAlert);
                     } else {
                         // Site a perdu sa connexion, envoyer une alerte
                         const now = new Date().toLocaleString('fr-FR', { timeZone: "Europe/Paris" });
-                        const unavailableConnectAlert = `Le site \`\`${site.addr}\`\` est __down,__ détecté à: **${now}**`;
+                        const unavailableConnectAlert = `<a:Boteurhack:1140254487798358017> ||<@&1119724538884800643>|| | Le site \`\`${site.addr}\`\` est __down,__ détecté à: **${now}** <a:alerte2:1067594465344225322>`;
                         logChannel.send(unavailableConnectAlert);
                     }
                 }
@@ -141,7 +140,13 @@ setInterval(() => {
             text: `Dernière actualisation : ${new Date().toLocaleString('fr-FR', { timeZone: "Europe/Paris" })}`
         });
 
-    msg.edit({ embeds: [pingEmbed] });
+        const embeds = new EmbedBuilder()
+        .setColor('#4285F4')
+        .setTitle("Code Source du Bot")
+        .setURL("https://github.com/PainDe0Mie/statut-site")
+        .setDescription("*Clique sûr le titre pour le téléchargé*")
+        
+    msg.edit({ embeds: [pingEmbed, embeds] });
 }).catch(error => {
     console.error('Erreur lors de la mise à jour des champs de ping:', error);
 });
