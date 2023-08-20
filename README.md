@@ -8,3 +8,5 @@ Configuration:
 "setalerte": id du salon en cas de down,
 
 Pour toute question ou problème: https://discord.gg/aBcPusCKx8
+
+Premier dev: !"Shinetsu.zkr (ruwinou)
