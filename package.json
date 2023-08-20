@@ -1,0 +1,18 @@
+{
+  "name": "discord-status",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ilowayn",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.12.1",
+    "i": "^0.3.7",
+    "npm": "^9.8.1",
+    "tcp-ping": "^0.1.1"
+  }
+}

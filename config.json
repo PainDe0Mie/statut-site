@@ -1,0 +1,24 @@
+{
+    "bottoken": "TOKEN BOT",
+    "setchannel": "ID SALON 1", 
+    "setalerte": "ID SALON 2", 
+
+    "nameweb1": "Site Vitrine",  
+    "ipweb1": "swiperight.fr", 
+    "portweb": "80",
+    
+    "nameweb2": "Panel pterodactyl",
+    "ipweb2": "pteroq.swiperight.fr", 
+    
+     "nameweb3": "Base de données",
+     "ipweb3": "pma.swiperight.fr",
+    
+    "nameweb4": "SMTP [Mail]",
+    "ipweb4": "mail.zoho.eu",
+    
+    "nameweb5": "VPS 01",
+    "ipweb5": "lws.fr/serveur-virtuel.php",
+    
+    "nameweb6": "Backup VPS 01",
+    "ipweb6": "cloud.google.com"
+}
