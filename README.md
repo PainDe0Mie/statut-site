@@ -4,9 +4,9 @@ Version Node JS: v18,
 
 Configuration:
 
-"setchannel": id du salon avec embed,
-"setalerte": id du salon en cas de down,
+"setchannel": id du salon avec embed uptime,
+"setalerte": id du salon en cas de down d'un site,
 
-Pour toute question ou problème: https://discord.gg/aBcPusCKx8
+Pour toute question ou problème: https://discord.gg/gratuit
 
-Premier dev: !"Shinetsu.zkr (ruwinou)
+Fork de: !"Shinetsu.zkr (ruwinou)
