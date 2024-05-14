@@ -4,21 +4,15 @@
     "setalerte": "ID SALON 2", 
 
     "nameweb1": "Site Vitrine",  
-    "ipweb1": "swiperight.fr", 
+    "ipweb1": "e-bot.fr", 
     "portweb": "80",
     
-    "nameweb2": "Panel pterodactyl",
-    "ipweb2": "pteroq.swiperight.fr", 
+    "nameweb2": "Espace Client",
+    "ipweb2": "dash.e-bot.fr", 
     
-     "nameweb3": "Base de données",
-     "ipweb3": "pma.swiperight.fr",
+    "nameweb3": "Panel Ptero",
+    "ipweb3": "panel.e-bot.fr",
     
-    "nameweb4": "SMTP [Mail]",
-    "ipweb4": "mail.zoho.eu",
-    
-    "nameweb5": "VPS 01",
-    "ipweb5": "lws.fr/serveur-virtuel.php",
-    
-    "nameweb6": "Backup VPS 01",
-    "ipweb6": "cloud.google.com"
+    "nameweb4": "DB MySQL",
+    "ipweb4": "db.e-bot.fr"
 }
