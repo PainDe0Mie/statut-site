@@ -53,9 +53,9 @@ client.on('ready', async () => {
             nameweb: config.nameweb2,
         },
         {
-            addr: config.ipweb5,
+            addr: config.ipweb3,
             port: config.portweb,
-            nameweb: config.nameweb5,
+            nameweb: config.nameweb3,
         },
         {
             addr: config.ipweb4,
@@ -66,11 +66,6 @@ client.on('ready', async () => {
             addr: "cloudflare.com",
             port: config.portweb,
             nameweb: "Proxy cloudflare",
-        },
-		{
-            addr: config.ipweb6,
-            port: config.portweb,
-            nameweb: config.nameweb6
         },
     ];
 
