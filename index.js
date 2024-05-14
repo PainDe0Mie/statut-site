@@ -77,12 +77,12 @@ client.on('ready', async () => {
         if (messages.length <= 0) return;
         await channel.bulkDelete(messages);
          const start = new EmbedBuilder()
-         .setColor("Red")
+         .setColor("RED")
          .setDescription("*Chargement en cours...*")
          const msg = await channel.send({ embeds: [start] });
 
-        var online = '<a:online:1140757189246599218>';
-        var offline = '<a:offline:1140757185329102910>';
+        var online = ":green_circle:";
+        var offline = ":red_circle:";
 
         let previousStates = {};
         let previousConnections = {};
@@ -101,12 +101,12 @@ setInterval(() => {
                     if (available) {
                         // Site est de nouveau connecté, envoyer une alerte
                         const now = new Date().toLocaleString('fr-FR', { timeZone: "Europe/Paris" });
-                        const availableConnectAlert = `<a:Boteurhack:1140254487798358017> Le site: \`\`${site.addr}\`\` est __redisponible__ à: **${now}** <a:youpi1:1067166921293844491>`;
+                        const availableConnectAlert = `Le site: \`\`${site.addr}\`\` est __redisponible__ à: **${now}**`;
                         logChannel.send(availableConnectAlert);
                     } else {
                         // Site a perdu sa connexion, envoyer une alerte
                         const now = new Date().toLocaleString('fr-FR', { timeZone: "Europe/Paris" });
-                        const unavailableConnectAlert = `<a:Boteurhack:1140254487798358017> ||<@&1119724538884800643>|| | Le site \`\`${site.addr}\`\` est __down,__ détecté à: **${now}** <a:alerte2:1067594465344225322>`;
+                        const unavailableConnectAlert = `|| @everyone || | Le site \`\`${site.addr}\`\` est __down,__ détecté à: **${now}**`;
                         logChannel.send(unavailableConnectAlert);
                     }
                 }
@@ -126,7 +126,7 @@ setInterval(() => {
   Promise.all(pingFields).then(fields => {
     const pingEmbed = new EmbedBuilder()
         .setTitle(":chart_with_upwards_trend: • Statut des services :")
-        .setURL("https://stats.uptimerobot.com/DOlqPSjoz6")
+        .setURL("https://stats.uptimerobot.com/oaQvwdMJoZ")
         .setColor('#4285F4')
         .addFields(...fields)
         .addFields({ name: '_ _', value: '_ _', inline: true })
