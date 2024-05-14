@@ -77,7 +77,7 @@ client.on('ready', async () => {
         if (messages.length <= 0) return;
         await channel.bulkDelete(messages);
          const start = new EmbedBuilder()
-         .setColor("RED")
+         .setColor("Red")
          .setDescription("*Chargement en cours...*")
          const msg = await channel.send({ embeds: [start] });
 
