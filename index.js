@@ -39,7 +39,7 @@ client.login(config.bottoken);
 
 client.on('ready', async () => {
     console.log(`${client.user.tag} est bien lancé !`);
-    client.user.setActivity("les machines", { type: "WATCHING" });
+    client.user.setActivity("Le VPS 👀", { type: ActivityType.Watching });
 
     const sites = [
         {
