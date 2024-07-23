@@ -5,7 +5,8 @@ const {
     GatewayIntentBits,
     Partials,
     DiscordAPIError,
-    EmbedBuilder
+    EmbedBuilder,
+    ActivityType
   } = require("discord.js");
   const client = new Client({
     intents: [
